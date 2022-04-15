@@ -1,8 +1,11 @@
-@use "../base/colors";
+$color-violet: #9356dc;
+$color-pink: #ff79da;
+$color-green: #99e2d0;
+$color-dark-grey: #232323;
 
-$color-primary: colors.$violet;
-$color-secondary: colors.$pink;
-$color-tertiary: colors.$green;
+$color-primary: $color-violet;
+$color-secondary: $color-pink;
+$color-tertiary: $color-green;
 
-$font-primary: "Roboto";
-$font-title: "Shrikhand";
+$font-primary: "Roboto", sans-serif;
+$font-title: "Shrikhand", cursive;

@@ -1,0 +1,35 @@
+@import "../themes/theme";
+
+footer {
+    background-color: $color-dark-grey;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 1em;
+    font-size: 1.1rem;
+    color: white;
+
+    .logo-title {
+        font-size: 1em;
+        font-weight: 100;
+        font-family: $font-title;
+    }
+
+    .footer-links-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+
+        .footer-link {
+            font-size: 0.8em;
+            color: white;
+            text-decoration: none;
+
+            i {
+                width: 1em;
+                margin-right: 0.5em;
+            }
+        }
+    }
+}

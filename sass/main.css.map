@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI;AACJ,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;ACLD,IAAI,CAAJ,gBAAI;AAEJ,AAAA,MAAM,CAAC;EACH,gBAAgB,EAAE,GAAG;CACxB",
+    "sources": [
+        "main.scss",
+        "base/_resets.scss",
+        "layout/_footer.scss",
+        "themes/_theme.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
