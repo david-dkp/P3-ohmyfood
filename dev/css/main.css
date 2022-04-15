@@ -167,7 +167,75 @@ footer .footer-links-list .footer-link i {
 }
 
 .restaurants-list {
-  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.restaurants-list .restaurant-card {
+  position: relative;
+  border-radius: 15px;
+  height: 220px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.restaurants-list .restaurant-card .restaurant-image {
+  height: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurants-list .restaurant-card .restaurant-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 0.8em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.restaurants-list .restaurant-card .new-chip {
+  border-radius: 3px;
+  padding: 0.5em 0.8em;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #497a6e;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #99e2d0;
+}
+
+.restaurants-list .restaurant-card a {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+}
+
+section {
+  padding: 3em 1em;
 }
 
 .reserve-section {
@@ -200,9 +268,20 @@ footer .footer-links-list .footer-link i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2em 1em;
 }
 
 .ordering-steps-section .ordering-steps-list {
   padding-inline: 0.7em;
+}
+
+.restaurants-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5em;
+  background: #f4f4f4;
 }
