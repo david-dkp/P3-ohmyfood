@@ -13,6 +13,15 @@
         gap: 1em;
         padding: 1.4em 1.5em;
         align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-primary-light;
+
+            i {
+                color: $color-primary;
+            }
+        }
 
         i {
             color: gray;

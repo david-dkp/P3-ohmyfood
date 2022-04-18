@@ -126,21 +126,12 @@ footer .footer-links-list .footer-link i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #f4f4f4;
+  background-color: red;
   gap: 1em;
   padding: 1.4em 1.5em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer;
-}
-
-.ordering-steps-list .ordering-step-container:hover {
-  background-color: #9256dc24;
-}
-
-.ordering-steps-list .ordering-step-container:hover i {
-  color: #9356dc;
 }
 
 .ordering-steps-list .ordering-step-container i {
@@ -325,3 +316,4 @@ section {
   gap: 1.5em;
   background: #f4f4f4;
 }
+/*# sourceMappingURL=main.css.map */
