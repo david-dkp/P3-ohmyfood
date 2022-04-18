@@ -1,4 +1,5 @@
 $color-violet: #9356dc;
+$color-violet-light: #9256dc24;
 $color-pink: #ff79da;
 $color-green: #99e2d0;
 $color-green-dark: #497a6e;
@@ -6,9 +7,16 @@ $color-dark-grey: #232323;
 $color-light-grey: #f4f4f4;
 
 $color-primary: $color-violet;
+$color-primary-light: $color-violet-light;
 $color-secondary: $color-pink;
 $color-tertiary: $color-green;
 $color-tertiary-dark: $color-green-dark;
+
+$color-secondary-gradient: linear-gradient(
+    0deg,
+    rgba(147, 86, 220, 1) 0%,
+    #ff79da 100%
+);
 
 $font-primary: "Roboto", sans-serif;
 $font-title: "Shrikhand", cursive;
