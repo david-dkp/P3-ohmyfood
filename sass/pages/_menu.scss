@@ -10,6 +10,12 @@
     border-top-right-radius: 30px;
     transform: translateY(-30px);
     background: $color-light-grey;
+    display: flex;
+    flex-direction: column;
+
+    section {
+        padding: 0;
+    }
 
     .menu-title-container {
         display: flex;
@@ -19,6 +25,25 @@
         .menu-title {
             font-family: $font-title;
             font-weight: 400;
+        }
+    }
+
+    .menu-section-title {
+        text-transform: uppercase;
+        font-weight: lighter;
+        font-size: medium;
+        padding-bottom: 5px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 2.5em;
+
+            background-color: $color-tertiary;
         }
     }
 }
