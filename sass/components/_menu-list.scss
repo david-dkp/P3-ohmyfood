@@ -5,13 +5,33 @@
     flex-direction: column;
     gap: 12px;
 
+    @keyframes itemAppearAnimation {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
     .menu-list-item {
+        opacity: 0;
+        animation: itemAppearAnimation 0.9s 1;
+        animation-fill-mode: forwards;
         overflow: hidden;
         background-color: white;
         border-radius: 10px;
         @include elevationMedium;
         font-size: 1.2em;
         display: flex;
+
+        @for $i from 1 through 4 {
+            &:nth-child(#{$i}) {
+                animation-delay: $i * 0.25s;
+            }
+        }
 
         &:hover {
             .check-container {
