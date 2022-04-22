@@ -407,10 +407,36 @@ footer .footer-links-list .footer-link i {
 }
 
 .menu-restaurant-image {
-  height: 250px;
+  height: 270px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.menu-section {
+  padding: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+  background: #f4f4f4;
+}
+
+.menu-section .menu-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-section .menu-title-container .menu-title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
 }
 
 section {
