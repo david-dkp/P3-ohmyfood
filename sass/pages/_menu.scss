@@ -12,6 +12,8 @@
     background: $color-light-grey;
     display: flex;
     flex-direction: column;
+    gap: 25px;
+    padding-bottom: 80px;
 
     section {
         padding: 0;
@@ -45,5 +47,14 @@
 
             background-color: $color-tertiary;
         }
+    }
+
+    .command-button {
+        align-self: center;
+        padding-inline: 3em;
+    }
+
+    .menu-list {
+        margin-top: 12px;
     }
 }

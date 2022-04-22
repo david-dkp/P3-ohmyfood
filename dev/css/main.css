@@ -432,7 +432,7 @@ footer .footer-links-list .footer-link i {
 }
 
 .menu-list .menu-list-item:hover .check-container {
-  width: 50px;
+  width: 55px;
   -webkit-transition: width 0.5s ease;
   transition: width 0.5s ease;
 }
@@ -451,6 +451,14 @@ footer .footer-links-list .footer-link i {
       -ms-flex: 1;
           flex: 1;
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3px;
   overflow: hidden;
 }
 
@@ -521,6 +529,8 @@ footer .footer-links-list .footer-link i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 25px;
+  padding-bottom: 80px;
 }
 
 .menu-section section {
@@ -560,6 +570,17 @@ footer .footer-links-list .footer-link i {
   height: 2px;
   width: 2.5em;
   background-color: #99e2d0;
+}
+
+.menu-section .command-button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-inline: 3em;
+}
+
+.menu-section .menu-list {
+  margin-top: 12px;
 }
 
 section {

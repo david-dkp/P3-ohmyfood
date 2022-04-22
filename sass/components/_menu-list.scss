@@ -15,7 +15,7 @@
 
         &:hover {
             .check-container {
-                width: 50px;
+                width: 55px;
                 transition: width 0.5s ease;
 
                 i {
@@ -28,6 +28,9 @@
         .menu-list-item-sub-container {
             flex: 1;
             padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
             overflow: hidden;
 
             .menu-list-item-description-container {
