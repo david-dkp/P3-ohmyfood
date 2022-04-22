@@ -1,3 +1,18 @@
+.navbar-container {
+    display: flex;
+    align-items: center;
+
+    a {
+        padding: 1em;
+        margin-right: auto;
+        color: black;
+    }
+
+    .logo-title {
+        margin-right: auto;
+    }
+}
+
 .menu-restaurant-image {
     height: 270px;
     width: 100%;
