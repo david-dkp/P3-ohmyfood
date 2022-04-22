@@ -248,6 +248,8 @@ footer .footer-links-list .footer-link i {
 }
 
 .restaurants-list .restaurant-card {
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   position: relative;
   border-radius: 15px;
   height: 220px;
@@ -261,8 +263,6 @@ footer .footer-links-list .footer-link i {
           flex-direction: column;
   background-color: white;
   color: black;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .restaurants-list .restaurant-card .restaurant-image {
@@ -404,6 +404,100 @@ footer .footer-links-list .footer-link i {
   top: 0;
   left: 0;
   fill: #d32f2f;
+}
+
+.menu-list {
+  list-style: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+
+.menu-list .menu-list-item {
+  overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-list .menu-list-item:hover .check-container {
+  width: 50px;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+
+.menu-list .menu-list-item:hover .check-container i {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.menu-list .menu-list-item .menu-list-item-sub-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.menu-list .menu-list-item .menu-list-item-sub-container .menu-list-item-description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0.7em;
+  gap: 5px;
+}
+
+.menu-list .menu-list-item .menu-list-item-sub-container .menu-list-item-description-container .menu-list-item-detail {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu-list .menu-list-item .menu-list-item-sub-container .menu-list-item-description-container .menu-list-item-price {
+  font-weight: bold;
+}
+
+.menu-list .menu-list-item .check-container {
+  background-color: #99e2d0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 0;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+
+.menu-list .menu-list-item .check-container i {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 .menu-restaurant-image {

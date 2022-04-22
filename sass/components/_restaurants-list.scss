@@ -4,6 +4,7 @@
     gap: 1rem;
 
     .restaurant-card {
+        @include elevationMedium;
         position: relative;
         border-radius: 15px;
         height: 220px;
@@ -12,8 +13,6 @@
         flex-direction: column;
         background-color: white;
         color: black;
-
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 
         .restaurant-image {
             height: 70%;

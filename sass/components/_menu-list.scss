@@ -1,0 +1,66 @@
+.menu-list {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .menu-list-item {
+        overflow: hidden;
+        background-color: white;
+        border-radius: 10px;
+        @include elevationMedium;
+        font-size: 1.2em;
+        display: flex;
+
+        &:hover {
+            .check-container {
+                width: 50px;
+                transition: width 0.5s ease;
+
+                i {
+                    transition: transform 0.5s ease-in-out;
+                    transform: rotate(0deg);
+                }
+            }
+        }
+
+        .menu-list-item-sub-container {
+            flex: 1;
+            padding: 10px;
+            overflow: hidden;
+
+            .menu-list-item-description-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-size: 0.7em;
+                gap: 5px;
+
+                .menu-list-item-detail {
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+
+                .menu-list-item-price {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .check-container {
+            background-color: $color-tertiary;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 0;
+            transition: width 0.5s ease;
+
+            i {
+                transform: rotate(-360deg);
+            }
+        }
+    }
+}

@@ -1,5 +1,7 @@
 @import "base/resets";
 
+@import "mixins/cards";
+
 @import "layout/header";
 @import "layout/footer";
 
@@ -12,6 +14,7 @@
 @import "components/loading-spinner";
 @import "components/restaurants-list";
 @import "components/filling_heart";
+@import "components/menu-list";
 
 @import "pages/menu";
 @import "pages/home";
