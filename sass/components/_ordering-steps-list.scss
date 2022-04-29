@@ -38,4 +38,14 @@
             transform: translateX(-50%);
         }
     }
+
+    @media (min-width: $breakpoint-tablet) {
+        flex-direction: row;
+        gap: 2rem;
+
+        .ordering-step-container {
+            flex: 1;
+            padding-block: 2em;
+        }
+    }
 }

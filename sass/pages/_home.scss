@@ -1,5 +1,9 @@
 section {
     padding: 3em 1em;
+
+    @media (min-width: $breakpoint-desktop) {
+        padding: 3em clamp(1em, 7vw, 10em);
+    }
 }
 
 .reserve-section {

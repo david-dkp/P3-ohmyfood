@@ -15,8 +15,9 @@
         color: black;
 
         .restaurant-image {
-            height: 70%;
+            flex-grow: 1;
             object-fit: cover;
+            overflow: hidden;
         }
 
         .restaurant-info-container {
@@ -44,6 +45,21 @@
             bottom: 0;
             right: 0;
             top: 0;
+        }
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        flex-direction: row;
+
+        .restaurant-card {
+            flex: 1;
+            height: 500px;
         }
     }
 }

@@ -163,6 +163,22 @@ footer .footer-links-list .footer-link i {
           transform: translateX(-50%);
 }
 
+@media (min-width: 768px) {
+  .ordering-steps-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2rem;
+  }
+  .ordering-steps-list .ordering-step-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding-block: 2em;
+  }
+}
+
 .chip-primary {
   border-radius: 999px;
   background-color: #9356dc;
@@ -270,9 +286,12 @@ footer .footer-links-list .footer-link i {
 }
 
 .restaurants-list .restaurant-card .restaurant-image {
-  height: 70%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
 }
 
 .restaurants-list .restaurant-card .restaurant-info-container {
@@ -306,6 +325,33 @@ footer .footer-links-list .footer-link i {
   bottom: 0;
   right: 0;
   top: 0;
+}
+
+@media (min-width: 768px) {
+  .restaurants-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1025px) {
+  .restaurants-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .restaurants-list .restaurant-card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 500px;
+  }
 }
 
 @-webkit-keyframes pulse {
@@ -668,6 +714,12 @@ footer .footer-links-list .footer-link i {
 
 section {
   padding: 3em 1em;
+}
+
+@media (min-width: 1025px) {
+  section {
+    padding: 3em clamp(1em, 7vw, 10em);
+  }
 }
 
 .reserve-section {
