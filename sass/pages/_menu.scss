@@ -1,15 +1,15 @@
 .navbar-container {
+    position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     a {
         padding: 1em;
         margin-right: auto;
         color: black;
-    }
-
-    .logo-title {
-        margin-right: auto;
+        position: absolute;
+        left: 0;
     }
 }
 

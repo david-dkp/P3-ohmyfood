@@ -571,22 +571,24 @@ footer .footer-links-list .footer-link i {
 }
 
 .navbar-container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .navbar-container a {
   padding: 1em;
   margin-right: auto;
   color: black;
-}
-
-.navbar-container .logo-title {
-  margin-right: auto;
+  position: absolute;
+  left: 0;
 }
 
 .menu-restaurant-image {
