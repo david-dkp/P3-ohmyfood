@@ -518,6 +518,12 @@ footer .footer-links-list .footer-link i {
   overflow: hidden;
 }
 
+.menu-list .menu-list-item .menu-list-item-sub-container .menu-list-item-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .menu-list .menu-list-item .menu-list-item-sub-container .menu-list-item-description-container {
   display: -webkit-box;
   display: -ms-flexbox;
