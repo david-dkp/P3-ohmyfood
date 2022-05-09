@@ -307,6 +307,10 @@ footer .footer-links-list .footer-link i {
           align-items: center;
 }
 
+.restaurants-list .restaurant-card .restaurant-name {
+  font-size: 1em;
+}
+
 .restaurants-list .restaurant-card .new-chip {
   border-radius: 3px;
   padding: 0.5em 0.8em;
