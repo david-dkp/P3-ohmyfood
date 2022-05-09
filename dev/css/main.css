@@ -572,6 +572,7 @@ footer .footer-links-list .footer-link i {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 0.8em;
 }
 
 .menu-list .menu-list-item .menu-list-item-sub-container .menu-list-item-description-container {
